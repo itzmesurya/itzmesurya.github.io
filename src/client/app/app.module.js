@@ -36,7 +36,8 @@
             epAxisSettingsVal.cacheEnabled = response.data.cacheEnabled;
             epAxisSettingsVal.applicationName = response.data.applicationName;
             angular.module('ep.axis.core').constant('epAxisSettingsVal', epAxisSettingsVal);
-            fetchClutchStates(epAxisSettingsVal.isDev).then(bootstrapApplication);
+            bootstrapApplication();
+            // fetchClutchStates(epAxisSettingsVal.isDev).then(bootstrapApplication);
         }, function (errorResponse) {
             // Handle error case
         });
