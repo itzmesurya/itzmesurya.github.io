@@ -1,7 +1,0 @@
-{
-    "genericApiUrl": "http://localhost:3000",
-    "isDev": true,
-    "isGenericApiSecure": true,
-    "cacheEnabled": true,
-    "applicationName": "WE20"
-}
