@@ -16,7 +16,7 @@
 
         vm.formModel = {
             dealer: {
-                dealerName: 'Nissan Dealer America',
+                dealerName: 'Nissan Dealer America Nissan Dealer America Nissan Dealer America',
                 address: '12346 MainSterrt Ave.',
                 dealerCode: 'ABCDE123456XYZ',
                 city: 'Chicago',
@@ -104,7 +104,7 @@
                                 type: 'ep-label',
                                 className: 'flex-100 labelfield',
                                 templateOptions: {
-                                    className: 'flex-40',
+                                    className: 'dealer-name',
                                     label: 'Dealer Name',
                                     labelClass: 'disabledInputLabel'
                                 }

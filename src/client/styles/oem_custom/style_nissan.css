@@ -85,7 +85,7 @@ label,
 .profileCard md-card {
   background-color: transparent;
   box-shadow: none;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .profile-picture {
@@ -294,7 +294,7 @@ md-input-focused label {
 }
 
 .md-button.md-raised:not([disabled]):hover {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.35);
 }
 
 md-nav-bar.navbar-navigation-top .md-button.md-accent {
@@ -348,4 +348,12 @@ md-card md-card-title md-card-title-text:not(:only-child) .md-subhead, .contacts
 
 .margin-bottom-20 {
   margin-bottom: 20px;
+}
+
+.layout-column.layout-wrap.content {
+  padding-bottom: 60px;
+}
+
+.dealerProfile md-input-container.dealer-name {
+  width: 100%;
 }
