@@ -5,9 +5,9 @@
         .module('ep.axis.offerPortal')
         .run(appRun);
 
-    appRun.$inject = ['routerHelper', 'epAxisClutchStates', '$location', '$rootScope'];
+    appRun.$inject = ['routerHelper', '$location', '$rootScope'];
     /* @ngInject */
-    function appRun(routerHelper, epAxisClutchStates, $location, $rootScope) {
+    function appRun(routerHelper, $location, $rootScope) {
         var userExists = ['$q', '$rootScope', 'localStorageService',
             function ($q, $rootScope, localStorageService) {}
         ];
