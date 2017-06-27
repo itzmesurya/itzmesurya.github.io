@@ -44,19 +44,6 @@
                     controllerAs: 'vm',
                     title: 'Materail Demo'
                 }
-            },
-            {
-                state: 'offerPortal.materialDemo',
-                config: {
-                    url: 'materialdemo',
-                    templateUrl: 'src/client/app/offerPortal/pages/materialDemo.html',
-                    controller: 'materialDemoTemplate',
-                    controllerAs: 'vm',
-                    title: 'Materail Demo',
-                    params: {
-                        program: 'demo'
-                    }
-                }
             }
         ];
     }
