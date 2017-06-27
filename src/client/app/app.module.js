@@ -29,7 +29,7 @@
         var initInjector = angular.injector(['ng']);
         var $http = initInjector.get('$http');
 
-        return $http.get('/app/appConstants.json').then(function (response) {
+        return $http.get('/src/client/app/appConstants.json').then(function (response) {
             epAxisSettingsVal.apiUrl = response.data.genericApiUrl;
             epAxisSettingsVal.isDev = response.data.isDev;
             epAxisSettingsVal.isGenericApiSecure = response.data.isGenericApiSecure;
