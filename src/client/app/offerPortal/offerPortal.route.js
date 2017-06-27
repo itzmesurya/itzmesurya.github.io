@@ -39,7 +39,7 @@
                 state: 'offerPortal.dummy',
                 config: {
                     url: '',
-                    templateUrl: 'app/offerPortal/pages/materialDemo.html',
+                    templateUrl: 'src/client/app/offerPortal/pages/materialDemo.html',
                     controller: 'materialDemoTemplate',
                     controllerAs: 'vm',
                     title: 'Materail Demo'
@@ -49,7 +49,7 @@
                 state: 'offerPortal.materialDemo',
                 config: {
                     url: 'materialdemo',
-                    templateUrl: 'app/offerPortal/pages/materialDemo.html',
+                    templateUrl: 'src/client/app/offerPortal/pages/materialDemo.html',
                     controller: 'materialDemoTemplate',
                     controllerAs: 'vm',
                     title: 'Materail Demo',

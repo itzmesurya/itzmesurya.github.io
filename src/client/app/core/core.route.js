@@ -28,7 +28,7 @@
                 state: '404.PageNotFound',
                 config: {
                     url: '/PageNotFound',
-                    templateUrl: 'app/core/ep404NotFound.html',
+                    templateUrl: 'src/client/app/core/ep404NotFound.html',
                 }
             }
         ];
