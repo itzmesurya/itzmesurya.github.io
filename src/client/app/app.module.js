@@ -19,7 +19,7 @@
         /* Third party */
         'ngResource'
     ]).config(['$epGenericDataServiceProvider', function ($epGenericDataServiceProvider) {
-        $epGenericDataServiceProvider.init(epAxisSettingsVal);
+       // $epGenericDataServiceProvider.init(epAxisSettingsVal);
     }]);
 
     // Bootstrap Axis to get environment variables beforehand
@@ -45,7 +45,7 @@
     function fetchClutchStates(isDev) {
         var initInjector = angular.injector(['ng']);
         var $http = initInjector.get('$http');
-        if (!isDev) {
+        if (!true) {
             return $http.post(epAxisSettingsVal.apiUrl +
                     (epAxisSettingsVal.isGenericApiSecure ?
                         '/securegenericdataservice' : '/genericdataservice') +
@@ -61,11 +61,11 @@
                     // Handle error case
                 });
         } else {
-            return $http.get('/app/offerPortal/states/' + getParameterByName() + '.json')
-                .then(function (data) {
-                    angular.module('ep.axis').value('epAxisClutchStates',
-                        data.stateSchema);
-                });
+            // return $http.get('/app/offerPortal/states/' + getParameterByName() + '.json')
+            //     .then(function (data) {
+            //         angular.module('ep.axis').value('epAxisClutchStates',
+            //             data.stateSchema);
+            //     });
         }
     }
 
