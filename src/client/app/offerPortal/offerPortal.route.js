@@ -61,7 +61,7 @@
         oemName = "NISSAN";
         oemDetails.oem = oemName;
         console.log("oem name==>" + oemName);
-        oemDetails.programName = oemName.toUpperCase() + 'DIGITALSERVICEMARKETING';
+        // oemDetails.programName = oemName.toUpperCase() + 'DIGITALSERVICEMARKETING';
         $rootScope.oemDetails = oemDetails;
         routerHelper.configureStates(getStates(oemDetails), '/');
     }
@@ -265,7 +265,7 @@
                     templateUrl: 'app/offerPortal/security/adminlogin.html',
                     controller: 'AdminLogin',
                     controllerAs: 'cl',
-                    oemDetails: oemDetails,
+                    // oemDetails: oemDetails,
                     title: 'Admin Login'
                 }
             }
