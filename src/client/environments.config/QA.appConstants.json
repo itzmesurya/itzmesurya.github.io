@@ -1,0 +1,5 @@
+{
+    "genericApiUrl": "https://qatest-webenrollmentapi.amssupport.net",
+    "isGenericApiSecure": true,
+    "cacheEnabled": true
+}

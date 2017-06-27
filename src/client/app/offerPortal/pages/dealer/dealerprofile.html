@@ -1,0 +1,21 @@
+﻿<div layout="row">
+    <md-card layout-padding flex="50">
+        <md-toolbar layout-align="center">
+            <span>Dealer Profile</span>
+        </md-toolbar>
+        <md-card-content style="height:auto;">
+            <form name="cl.homeForm" novalidate class="col-md-12">
+    <div class="row">
+        <div class="col-sm-12" style="font-size:14px;">
+            <form name="dp.dealerPersonalization" class="col-md-12">
+    <div class="row">
+        <div class="col-sm-12">
+            <formly-form model="dp.getMBData.enrollmentDetails" fields="dp.formlyFields.personalizationForm" options="dp.options" form="dp.dealerPersonalization">
+            </formly-form>
+        </div>
+    </div>
+</form>
+<div class="clear"></div>
+       </md-card-content>
+    </md-card>
+</div>

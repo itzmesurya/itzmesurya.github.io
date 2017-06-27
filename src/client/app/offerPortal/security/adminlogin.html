@@ -1,0 +1,14 @@
+﻿<div layout="row">
+       <md-card layout-padding flex="50" >
+        <md-toolbar layout-align="center">
+            <span>Admin Login</span>
+        </md-toolbar>
+        <md-card-content style="height:auto;">
+            <form name="form1" novalidate>
+                <formly-form class="form-horizontal" id="form-horizontal" model="cl.logininfo" fields="cl.formlyfields.adminLogin" form="cl.loginForm" options="cl.options">
+                </formly-form>
+                <!--<button type="submit" ng-click="vm.submit()" class="btn btn-primary">Submit<div class="ripple-container"></div></button>-->
+            </form>
+       </md-card-content>
+    </md-card>
+</div>

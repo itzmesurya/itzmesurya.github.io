@@ -1,0 +1,116 @@
+{
+    "stateSchema": [
+        {
+            "state": "offerPortal.enrollment.enrollmentform.profile",
+            "config": {
+                "url": "/profile",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/dealerinformation/profile.html",
+                "controller": "Profile",
+                "controllerAs": "vm",
+                "title": "Dealership Profile"
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.uihours",
+            "config": {
+                "url": "/uihours",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/uiHours/uihours.html",
+                "controller": "UIHours",
+                "controllerAs": "vm",
+                "title": "UI Hours"
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.contacts",
+            "config": {
+                "url": "/contacts",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/contacts/contacts.html",
+                "controller": "Contacts",
+                "controllerAs": "vm",
+                "title": "Dealership Contacts",
+                "params": {
+                    "formName": "Dealer Coupons",
+                    "dealerColumn":"EN_DEALER_PGM_OBJID"
+                }
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.dealerimprint",
+            "config": {
+                "url": "/dealerimprint",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/dealerimprint/dealerimprint.html",
+                "controller": "DealerImprint",
+                "controllerAs": "vm",
+                "title": "Dealer Imprint"
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.communications",
+            "config": {
+                "url": "/Communications",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/communications/communications.html",
+                "controller": "Communications",
+                "controllerAs": "vm",
+                "title": "Communications/Model Triggers",
+                "params": {
+                    "formName": "Dealer Coupons",
+                    "dealerColumn":"EN_DEALER_PGM_OBJID"
+                }
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.declinedservice",
+            "config": {
+                "url": "/declinedservice",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/declinedservice/declinedservice.html",
+                "controller": "DeclinedService",
+                "controllerAs": "vm",
+                "title": "Declined Service"
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.dnclist",
+            "config": {
+                "url": "/dnc",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/dncList/dncList.html",
+                "controller": "DncList",
+                "controllerAs": "vm",
+                "title": "DNC"
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.submitauthorization",
+            "config": {
+                "url": "/submitauthorization",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/submitAuthorization/submitAuthorization.html",
+                "controller": "SubmitAuthorization",
+                "controllerAs": "vm",
+                "title": "Submit Authorization",
+                "params": {
+                    "formName": "Submit Authorization",
+                    "dealerColumn":"pi_en_dealer_pgm_objid"
+                }
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.summary",
+            "config": {
+                "url": "/summary",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/summary/summary.html",
+                "controller": "Summary",
+                "controllerAs": "vm",
+                "title": "Summary"
+            }
+        },
+        {
+            "state": "offerPortal.enrollment.enrollmentform.activityLogging",
+            "config": {
+                "url": "/activityLogging",
+                "templateUrl": "app/offerPortal/enrollment/enrollmentforms/activityLogging/activityLogging.html",
+                "controller": "ActivityLogging",
+                "controllerAs": "vm",
+                "title": "Activity Logging"
+            }
+        }
+    ]
+}

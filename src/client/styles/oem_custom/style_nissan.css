@@ -1,0 +1,351 @@
+/* Nissan Fonts */
+@font-face {		
+    font-family: 'NissanPro-Regular';		
+    src: url('../../fonts/Nissan-fonts/NissanPro-Regular.otf') format('woff');		
+}
+
+@font-face {		
+    font-family: 'NissanPro-Medium';		
+    src: url('../../fonts/Nissan-fonts/NissanPro-Md.otf') format('woff');		
+}
+
+@font-face {		
+    font-family: 'NissanPro-Bold';		
+    src: url('../../fonts/Nissan-fonts/NissanPro-Bold.otf') format('woff');		
+ }
+
+@font-face {		
+    font-family: 'NissanPro-BoldItalic';		
+    src: url('../../fonts/Nissan-fonts/NissanPro-BoldIt.otf') format('woff');		
+    }
+
+body {
+  font-family: 'NissanPro-Regular';
+  font-size: 15px;
+}
+
+select,
+html,
+textarea,
+input,
+label,
+.md-headline,
+.dealer-heading,
+.nissan-demo .layout-row.flex {
+  font-family: 'NissanPro-Bold';
+}
+
+.demo-card {
+  border-radius: 3px 3px 3px 3px;
+  background-color: rgb(63, 81, 181);
+  color: white;
+}
+
+.dealer-heading {
+  font-size: 24px;
+}
+
+.dealer-subheading {
+  font-family: 'NissanPro-BoldItalic';
+  font-size: 14px;
+}
+
+.card-media {
+  background-color: #999;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.container {
+  background: #eee;
+}
+
+.content-body {
+  width: 75%;
+  margin: 0 auto;
+  min-height: 300px;
+}
+
+.profileCard md-card md-card-title-media img {
+  width: 80%;
+}
+
+.content {
+  background-color: white;
+  padding: 20px 20px 0 20px;
+  margin: 10px;
+}
+
+.content.profile-content{
+  padding-top: 45px;
+}
+
+.profileCard md-card {
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: 40px;
+}
+
+.profile-picture {
+  background: #bbb;
+  padding-bottom:10px;
+}
+
+.fileupload-btndiv {
+  margin-right: 45px;
+}
+
+@media screen and (max-width:768px) {
+  .profile-picture {
+    width: 100%;
+    height: 94%;
+  }
+}
+@media screen and (min-width:768px) and (max-width:959px) {
+ 
+  .navbar-title, .navbar-bottom .md-nav-bar ul li:nth-child(3) {
+    margin-left: 6%;
+  }
+}
+@media screen and (min-width:769px) and (max-width:959px) {
+  .profile-picture {
+    width: 200px;
+    height: 90%;
+  }
+  .navbar-title, .navbar-bottom .md-nav-bar ul li:nth-child(3) {
+    margin-left: 6%;
+  }
+}
+@media screen and (min-width:960px) and (max-width:1024px) {
+  .profile-picture {
+    width: 170px;
+    height: 90%;
+  }
+  .navbar-title, .navbar-bottom .md-nav-bar ul li:nth-child(3) {
+    margin-left: 6%;
+  }
+}
+@media screen and (min-width:1600px){
+  .profile-picture {
+    width: 320px;
+    height: 90%;
+  }
+ 
+}
+
+@media screen and (min-width:1025px) and (max-width:1600px){
+   .navbar-title, .navbar-bottom .md-nav-bar ul li:nth-child(3) {
+    margin-left: 2%;
+  }
+  .profile-picture {
+    width: 260px;
+    height: 90%;
+  }
+  .fileupload-btndiv {
+    margin-left: 50px;
+    margin-right: 0px;
+  }
+
+}
+
+.dealerProfile {
+  padding-bottom: 0px;
+}
+
+.dealerProfile md-input-container,
+.inputFields md-input-container {
+  margin: 0;
+}
+
+.dealerProfile md-input-container {
+  height: 50px;
+}
+
+.dealerProfile md-input-container .md-input{
+  height: 20px;
+  font-size: 16px;
+}
+
+.dealerProfile .labelfield {
+  padding-top: 0;
+}
+
+.md-errors-spacer {
+  display: none;
+}
+
+md-input-container [disabled].disabledInputLabel {
+  color: black;
+  font-weight: bold;
+}
+
+md-input-container.labelfield label {
+  color: #eee;
+}
+
+.inputFields {
+  background: #eee;
+  border: 1.5px #d8d8d8 solid;
+  margin-bottom: 20px
+}
+
+.inputFields md-input-container input,
+.inputFields md-checkbox:not(.md-checked) .md-icon {
+  background: white;
+}
+
+.inputFields md-input-container input,
+.inputFields md-input-container.md-input-has-value input,
+.inputFields md-input-container.md-input-has-placeholder input,
+.inputFields md-input-container .md-input.ng-invalid.ng-dirty {
+  padding: 15px 10px;
+  font-size: 14px;
+  color: #c1c1c1;
+}
+
+.dealerProfile md-input-container:not(.md-input-invalid).md-input-has-value label {
+  color: #c1c1c1;
+  font-size: 20px;
+}
+
+
+/* Below line of code is just for Demo */
+
+.nissan-demo md-input-container:not(.md-input-invalid).md-input-has-value.md-input-focused label,
+md-input-focused label {
+  color: #000;
+}
+
+.nissan-demo {
+  font-weight: bold;
+}
+
+.nissan-demo md-input-container.md-default-theme:not(.md-input-focused):not(.md-input-invalid) label.md-required:after,
+.nissan-demo md-input-container:not(.md-input-focused):not(.md-input-invalid) label.md-required:after {
+  color: rgb(221, 44, 0);
+}
+
+.nissan-demo md-checkbox:not([disabled]).md-primary.md-checked .md-icon {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.54);
+}
+
+.nissan-demo md-checkbox:not([disabled]).md-primary.md-checked .md-icon:after {
+  border-color: #000;
+}
+
+/* New Design Table css */
+
+.header {
+  background: #c71444;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/* End Demo Code */
+
+.inputFields md-input-container.md-input-has-value label,
+.inputFields md-input-container label {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+}
+
+
+.inputFields md-checkbox {
+  margin: 0 0 0 40px;
+}
+
+.md-button {
+  font-family: 'NissanPro-Medium';
+}
+
+.md-icon-button.md-button {
+  font-family: inherit;
+}
+
+.md-button.md-nissan,
+.md-button.md-raised.md-nissan:not([disabled]):hover,
+.md-button.md-nissan:not([disabled]).md-focused,
+.md-button.md-raised.md-default,
+.md-button.md-raised.md-default:not([disabled]):hover,
+.md-button.md-raised.md-default:not([disabled]).md-focused {
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0;
+}
+
+.md-button.md-nissan,
+.md-button.md-raised.md-nissan:not([disabled]):hover,
+.md-button.md-nissan:not([disabled]).md-focused {
+  background: #c71444;
+  color: white;
+}
+
+.md-button.md-raised.md-default,
+.md-button.md-raised.md-default:not([disabled]):hover,
+.md-button.md-raised.md-default:not([disabled]).md-focused {
+  background: #666;
+}
+
+.md-button.md-raised:not([disabled]):hover {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+md-nav-bar.navbar-navigation-top .md-button.md-accent {
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dealer-contact-lbl label {
+  margin-bottom: 4px;
+}
+
+.menu-content .menu-item .md-button {
+  font-family: inherit;
+}
+
+.navbar-top .md-nav-item .md-accent.md-active {
+  color: #c71444;
+}
+
+.navbar-bottom ul._md-nav-bar-list {
+  height: 50px;
+}
+
+md-card md-card-title {
+  padding-bottom: 0;
+}
+
+md-card md-card-title md-card-title-text {
+  margin-top: 10px;
+}
+
+md-card md-card-title md-card-title-text:not(:only-child) .md-subhead, .contacts-subhead {
+  color: #000;
+  font-size: 15px;
+}
+
+
+.margin-top-5 {
+  margin-top: 5px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.margin-left-20 {
+  margin-left: 20px;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,52 @@
+<div layout="row" layout-padding>
+    <div layout-align="center" class="md-headline">
+        User Fields
+    </div>
+</div>
+<div layout="row">
+    <md-card layout-padding flex="33">
+        <md-toolbar layout-align="center">
+            <span>Sample</span>
+        </md-toolbar>
+        <md-card-content>
+            <form name="form1" novalidate>
+                <formly-form class="form-horizontal" id="form-horizontal" model="vm.formModel" fields="vm.userFields" form="vm.myform" options="vm.options">
+                </formly-form>
+                <!--<button type="submit" ng-click="vm.submit()" class="btn btn-primary">Submit<div class="ripple-container"></div></button>-->
+            </form>
+        </md-card-content>
+    </md-card>
+    <div layout="column" flex="33">
+        <md-card layout-padding flex="50">
+            <md-toolbar layout-align="center">
+                <span>Model</span>
+            </md-toolbar>
+            <md-card-content>
+                <pre>{{ vm.formModel| json }}</pre>
+            </md-card-content>
+        </md-card>
+        <md-card layout-padding flex="50">
+            <md-toolbar layout-align="center">
+                <span>Errors</span>
+            </md-toolbar>
+            <md-card-content style="overflow-y:scroll">
+                <div ng-repeat="item in vm.userFields">
+                    <div ng-if="item.formControl.$error">
+                        <p>{{item.name}}</p>
+                        <pre>{{item.formControl.$error | json}}</pre>
+                    </div>
+                </div>
+            </md-card-content>
+        </md-card>
+    </div>
+    <md-card layout-padding flex="33">
+        <md-toolbar layout-align="center">
+            <span>Angular-Formly Fields</span>
+        </md-toolbar>
+        <md-card-content style="height:450px;overflow-y:scroll">
+            <div ng-repeat="item in vm.actualFormFields">
+                <pre>{{ item | json }}</pre>
+            </div>
+        </md-card-content>
+    </md-card>
+</div>

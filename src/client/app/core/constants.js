@@ -1,0 +1,9 @@
+/* global toastr:false, moment:false, App:false, ace:true */
+(function() {
+    'use strict';
+
+    angular
+        .module('ep.axis.core')
+        .constant('toastr', toastr)
+        .constant('moment', moment);
+})();
