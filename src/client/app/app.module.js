@@ -76,13 +76,13 @@
     }
 
     function getParameterByName() {
-        var currentUrl = window.location.pathname;
-        /** parse oem name */
-        var oemName = currentUrl.split('/')[1];
-        /** instantiate an oemDetails object */
+        // var currentUrl = window.location.pathname;
+        // /** parse oem name */
+        // var oemName = currentUrl.split('/')[1];
+        // /** instantiate an oemDetails object */
         
-        //var result = 'CUSTOMER PREFERENCES CENTER ' + oemName.toUpperCase();
-        var result = oemName.toUpperCase() + 'DIGITALSERVICEMARKETING';
-        return decodeURIComponent(result.replace(/\+/g, ' '));
+        // //var result = 'CUSTOMER PREFERENCES CENTER ' + oemName.toUpperCase();
+        // var result = oemName.toUpperCase() + 'DIGITALSERVICEMARKETING';
+        // return decodeURIComponent(result.replace(/\+/g, ' '));
     }
 })();
