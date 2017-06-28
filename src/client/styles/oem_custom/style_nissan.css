@@ -287,14 +287,31 @@ md-input-focused label {
   color: white;
 }
 
+.md-button.md-raised.md-nissan:not([disabled]):hover {
+  background: #aa163c;
+}
+
 .md-button.md-raised.md-default,
-.md-button.md-raised.md-default:not([disabled]):hover,
 .md-button.md-raised.md-default:not([disabled]).md-focused {
   background: #666;
 }
 
+.md-button.md-raised.md-default:not([disabled]):hover {
+  background: #585858;
+}
+
+.md-input-focused md-select:not([disabled]):focus .md-select-value,
+md-input-container:not(.md-input-invalid).md-input-focused .md-input {
+  border-color: #666;
+} 
+
+md-input-container:not(.md-input-invalid).md-input-focused label,
+md-input-container:not(.md-input-invalid).md-input-has-value.md-input-focused label {
+  color: #666;
+}
+
 .md-button.md-raised:not([disabled]):hover {
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.35);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 md-nav-bar.navbar-navigation-top .md-button.md-accent {
